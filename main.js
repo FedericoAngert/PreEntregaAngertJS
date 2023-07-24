@@ -8,7 +8,7 @@ function queSeguro (tipoSeguro, valorSeguro) {
         precio = valorSeguro * 0.20;
     } else if (tipoSeguro === '2'){
         precio = valorSeguro * 0.30;
-    } else  {
+    } else {
         alert('El numero de seguro ingresado no existe, intente nuevamente');
         // alerta en caso de error
         return -1; //retorna a un numero invalido para indicar el error
@@ -43,15 +43,15 @@ function cotizarSeguro(){
 
 
 //Llamado funciones
-const [tipoSeguro, valorSeguro] = cotizarSeguro();
+const [seguroSelec, precioSegSec] = cotizarSeguro();
 
 
-const precio = queSeguro (tipoSeguro, valorSeguro);
+const precio = queSeguro (seguroSelec, precioSegSec);
 
 if (precio >= 0){
     alert(`El precio de su seguro es $${precio} al mes.`);
 } else {
-    alert('Debe ingresar "1" si desea seleccionar el seguro de Auto o "2" si desea el seguro de Bicicleta, refresque la pagina e intente nuvamente');
+    alert('Debe ingresar "1" si desea seleccionar el seguro de Auto o "2" si desea el seguro de Bicicleta, refresque la pagina e intente nuevamente');
 }
 
 
