@@ -5,9 +5,9 @@ function queSeguro (tipoSeguro, valorSeguro) {
     let precio = 0;
 
     if (tipoSeguro === '1') {
-        precio = valorSeguro * 0.20;
+        precio = valorSeguro * 0.017;
     } else if (tipoSeguro === '2'){
-        precio = valorSeguro * 0.30;
+        precio = valorSeguro * 0.019;
     } else {
         alert('El numero de seguro ingresado no existe, intente nuevamente');
         // alerta en caso de error
